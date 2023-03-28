@@ -1,0 +1,38 @@
+body {
+    background-color: rgb(44, 152, 241);
+    color: maroon;
+    font-family: Arial;
+    margin: 0px;
+}
+
+header {
+    background-color: black;
+    color:LightGreen;
+    font-size: 20pt;
+    text-align: center;
+}
+
+main {
+    background-color:rgb(131, 210, 241);
+    color:black;
+    font-size:20pt;
+    font-style:italic;
+    text-align:justify;
+    margin: 0px;
+}
+
+
+
+footer {
+    background-color:rgb(131, 210, 241);
+    color:black;
+    font-size:20pt;
+    font-style:italic;
+    text-align:center;
+    margin: 0px;
+}
+
+:link {
+    text-decoration: none;
+    color: green;
+}
