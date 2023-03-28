@@ -56,3 +56,22 @@ a:visited {
     color: blueviolet;
     background-color: moccasin;
 }
+
+footer:hover{
+    color: white;
+    transition: 300ms;
+}
+
+footer:active{
+    font-size: 20pt;
+}
+
+header:hover {
+    text-decoration: none;
+    color: white;
+    transition: 300ms;
+}
+
+header:active {
+    font-size: 20pt;
+}
