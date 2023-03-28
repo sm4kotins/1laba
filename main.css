@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    background-color: black;
+    background: linear-gradient(to right, rgb(255, 0, 0), rgb(246, 135, 0), rgb(254, 233, 6), rgba(17, 255, 0, 0.666), rgb(0, 217, 255), blue, violet);
     color:LightGreen;
     font-size: 20pt;
     text-align: center;
@@ -24,7 +24,7 @@ main {
 
 
 footer {
-    background-color:rgb(131, 210, 241);
+    background: linear-gradient(to right, rgb(255, 0, 0), rgb(246, 135, 0), rgb(254, 233, 6), rgba(17, 255, 0, 0.666), rgb(0, 217, 255), blue, violet);
     color:black;
     font-size:20pt;
     font-style:italic;
@@ -32,7 +32,7 @@ footer {
     margin: 0px;
 }
 
-:link {
+:li {
     text-decoration: none;
     color: green;
 }
