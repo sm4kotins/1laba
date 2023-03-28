@@ -36,3 +36,20 @@ footer {
     text-decoration: none;
     color: green;
 }
+
+a:hover {
+    color:sandybrown;
+    text-decoration: underline;
+    background-color: azure;
+    font-weight: bold;
+}
+
+a:active {
+    color:pink;
+    background-color: green;
+}
+
+a:visited {
+    color: blueviolet;
+    background-color: moccasin;
+}
