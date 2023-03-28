@@ -47,6 +47,21 @@
             color: white;
         }
 
+        .shadow {
+            text-shadow: -3px -3px 4px rgb(0, 4, 255);
+            text-align: left;
+        }
+
+        .shadow1 {
+            text-shadow: 0px 0px 5px blue;
+            margin: 0px 0px 0px 0px;
+        }
+
+        .teni2:hover {
+            text-shadow: -3px -3px 4px rgb(0, 4, 255);
+            transition: 1400ms;
+            transition-delay: 300ms
+        }
         
     </style>
 </head>
@@ -56,7 +71,7 @@
     </header>
 
     <main>
-        <h1>Расчет (формула)</h1>
+        <h1 class="teni2">Расчет (формула)</h1>
 <div>
     Расчет сводится к определению разницы между активами и пассивами (обязательствами), которые определяются следующим образом.
 </div>
@@ -98,6 +113,10 @@
 <div class="formula">
 Чистые активы = стр.1300 - ЗУ + ДБП
 </div>
+
+<div class="shadow">Тень ↘</div>
+<div class="shadow">Синяя тень слева снизу</div>
+<div class="shadow1">Синее размытие</div>
 
     </main>
 
