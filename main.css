@@ -42,6 +42,9 @@ a:hover {
     text-decoration: underline;
     background-color: azure;
     font-weight: bold;
+    opacity: 60%;
+    transition: 1400ms;
+    transition-delay: 300ms
 }
 
 a:active {
