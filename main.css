@@ -37,7 +37,7 @@ footer {
     color: green;
 }
 
-a:hover {
+a:hover { /*видимость наведённой ссылки*/
     color:sandybrown;
     text-decoration: underline;
     background-color: azure;
@@ -47,22 +47,22 @@ a:hover {
     transition-delay: 300ms
 }
 
-a:active {
+a:active { /*стиль для ссылки, которая становится активной, но еще не посещена*/
     color:pink;
     background-color: green;
 }
 
-a:visited {
+a:visited { /*видимость посещенной ссылки*/
     color: blueviolet;
     background-color: moccasin;
 }
 
-footer:hover{
+footer:hover{ 
     color: white;
     transition: 300ms;
 }
 
-footer:active{
+footer:active{ 
     font-size: 20pt;
 }
 
