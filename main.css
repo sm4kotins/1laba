@@ -13,7 +13,7 @@ header {
 }
 
 main {
-    background-color:rgb(131, 210, 241);
+    background-color:rgba(131, 210, 241,0.5);
     color:black;
     font-size:20pt;
     font-style:italic;
@@ -30,6 +30,9 @@ footer {
     font-style:italic;
     text-align:center;
     margin: 0px;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
 }
 
 :li {
