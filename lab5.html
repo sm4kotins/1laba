@@ -13,7 +13,11 @@
             let result = a + b;
             alert ('Сумма ' + a + ' и ' + b + ' равна '   + result);
         }
-        
+        function showAuthor() {
+            let author = 'Здравствуйте, уважаемый пользователь!\nАвтор страницы:\nСмакотин Степан Владиславович'
+            alert(author)
+        }
+
     </script>
     <style>
         .message {
@@ -36,10 +40,10 @@
 
     <main>
         <div class="message" onclick="showSum()">Сколько будет 5154+7891?</div>
-        <div class="message">Узнать, кто автор страницы</div>
+        <div class="message" onclick="showAuthor()">Узнать, кто автор страницы</div>
     </main>
 
-    <footer>
+    <footer onclick=showAuthor()>
         &copy Смакотин Степан Владиславович, ФБИ-13, 2 курс, 2023 
     </footer>
     </body>
