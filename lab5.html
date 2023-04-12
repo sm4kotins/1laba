@@ -11,7 +11,6 @@
             let inputA=document.getElementById('numberA')
             let inputB=document.getElementById('numberB')
 
-        
             let a = parseInt(inputA.value)
             let b = parseInt(inputB.value)
             let result = a + b;
@@ -22,6 +21,35 @@
             alert(author)
         }
 
+        function Showraznost() {
+            let inputA=document.getElementById('numberA')
+            let inputB=document.getElementById('numberB')
+
+            let a = parseInt(inputA.value)
+            let b = parseInt(inputB.value)
+            let result = a - b;
+            alert ('Разность ' + a + ' и ' + b + ' равна '   + result);
+        }
+
+        function Showdelenie() {
+            let inputA=document.getElementById('numberA')
+            let inputB=document.getElementById('numberB')
+
+            let a = parseInt(inputA.value)
+            let b = parseInt(inputB.value)
+            let result = a / b;
+            alert ('Деление ' + a + ' на ' + b + ' равна '   + result);
+        }
+
+        function ShowUmnozhenie() {
+            let inputA=document.getElementById('numberA')
+            let inputB=document.getElementById('numberB')
+
+            let a = parseInt(inputA.value)
+            let b = parseInt(inputB.value)
+            let result = a * b;
+            alert ('Умножение ' + a + ' на ' + b + ' равно '   + result);
+        }
     </script>
     <style>
         .message {
@@ -34,7 +62,9 @@
             display: inline-block;
             text-align: center;
             color: brown;
+            font-size: 19px;
         }
+
     </style>
 
 <body>
@@ -46,7 +76,11 @@
         <label>Первое число: <input type="number" id="numberA"></label><br>
         <label>Второе число: <input type="number" id="numberB"></label><br>
         <div class="message" onclick="showSum()">Найти сумму чисел</div>
-        <div class="message" onclick="showAuthor()">Узнать, кто автор страницы</div>
+        <div class="message" onclick="showAuthor()">Узнать автора страницы</div>
+        <div class="message" onclick="Showraznost()">Найти разность чисел</div>
+        <div class="message" onclick="Showdelenie()">Деление чисел</div>
+        <div class="message" onclick="ShowUmnozhenie()">Умножение чисел</div>
+
     </main>
 
     <footer onclick=showAuthor()>
