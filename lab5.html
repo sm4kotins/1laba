@@ -62,14 +62,23 @@
             let inputB = document.getElementById('Pear')
             let inputC = document.getElementById('Orange')
             let inputD = document.getElementById('Melon')
+            let inputE = document.getElementById('Mango')
             let a = parseInt(inputA.value);
             let b = parseInt(inputB.value);
             let c = parseInt(inputC.value);
             let d = parseInt(inputD.value);
-            let result1 = 100 * a + 80*b + 150*c + 300*d;
+            let e = parseInt(inputE.value);
+            let result1 = 100 * a + 80*b + 150*c + 300*d + 400*e
             let output = document.getElementById('result1');
             output.innerHTML = 'Итого: ' + result1 + '  рублей';
         }
+
+        function unshow(id) {
+            let a = document.getElementById(id);
+            a.style.display = "none";
+
+        }
+
     </script>
     <style>
         .message {
@@ -100,6 +109,16 @@
             height: 40px;
         }
 
+        .round{
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            border: 1px solid;
+            text-align: center;
+            line-height: 50px;
+            font-size: 20px;
+            display: inline-block;
+        }
     </style>
 
 <body>
@@ -139,9 +158,22 @@
                 <div> Дыни (300р/шт)
                     <input type="number" value="1" id="Melon"><br>
                 </div>
+                <div> Манго (400р/шт)
+                    <input type="number" value="1" id="Mango"><br>
+                </div>
                 <input type="button" value="Рассчитать" onclick="sumKorzina()">
                 <div id="result1"></div>
           </div>
+        <div class="round" id="c1" onclick="unshow('c1')">1</div>
+        <div class="round" id="c2" onclick="unshow('c2')">2</div>
+        <div class="round" id="c3" onclick="unshow('c3')">3</div>
+        <div class="round" id="c4" onclick="unshow('c4')">4</div>
+        <div class="round" id="c5" onclick="unshow('c5')">5</div>
+        <div class="round" id="c6" onclick="unshow('c6')">6</div>
+        <div class="round" id="c7" onclick="unshow('c7')">7</div>
+        <div class="round" id="c8" onclick="unshow('c8')">8</div>
+        <div class="round" id="c9" onclick="unshow('c9')">9</div>
+        <div class="round" id="c10" onclick="unshow('c10')">10</div>
 
     </main>
 
