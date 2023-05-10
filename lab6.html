@@ -32,6 +32,7 @@
             width: 800px;
             padding: 10px;
             background-color: rgb(0, 255, 60);
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
         }
     </style>
 
@@ -96,8 +97,39 @@
             document.getElementById("game-rules").style.display = "none";
         }
         function changecolor(div) {
-            div.style.backgroundColor = 'white'
-            document.getElementById('color-name').innerHTML = 'белый'
+            if (div.style.backgroundColor == 'yellow') {
+                div.style.backgroundColor = 'red';
+                document.getElementById('color-name').innerHTML = 'красный';
+            }
+            if (div.style.backgroundColor == 'red') {
+                div.style.backgroundColor = 'grey';
+                document.getElementById('color-name').innerHTML = 'серый';
+            }
+            else if (div.style.backgroundColor == 'grey') {
+                div.style.backgroundColor = 'black';
+                div.style.color = 'white';
+                document.getElementById('color-name').innerHTML = 'черный';
+            }
+            else if (div.style.backgroundColor == 'black') {
+                div.style.backgroundColor = 'pink';
+                div.style.color = 'black';
+                document.getElementById('color-name').innerHTML = 'розовый';
+            }
+            else if (div.style.backgroundColor == 'pink') {
+                div.style.backgroundColor = 'green';
+                div.style.color = 'white';
+                document.getElementById('color-name').innerHTML = 'зеленый';
+            }
+            else if (div.style.backgroundColor == 'green') {
+                div.style.backgroundColor = 'white';
+                div.style.color = 'black';
+                document.getElementById('color-name').innerHTML = 'белый';
+            }
+            else {
+                div.style.backgroundColor = 'yellow';
+                document.getElementById('color-name').innerHTML = 'желтый';
+                div.style.color = 'black'
+            }
         }
     </script>
 
