@@ -41,3 +41,11 @@ function ohistka() {
     inputDate.value="";
     result.innerHTML="";
 }
+
+function showTime() {
+    let today = new Date();
+    let currentTime = today.toLocaleTimeString('ru-RU');
+    document.getElementById('time').innerHTML = "Время " + currentTime;
+
+}
+setInterval(showTime, 1000);
