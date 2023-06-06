@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Панченко Егор Михайлович. Лабораторная работа 7</title>
+    <title>Смакотин Степан Владиславович. Лабораторная работа 7</title>
     <link rel="stylesheet" href="main.css">
     <script>
         function addBlocks() {
@@ -79,6 +79,53 @@
                  circles.appendChild(newCircles);
              }
          }
+         function tableUmno() {
+             let stud = 96;
+             let newTable = document.getElementById('tableOfUmno');
+
+             for (let i = 13; i<=33; i++) {
+                 let newTr = document.createElement('tr');
+                 let newTd = document.createElement('td');
+                 newTd.innerHTML = i + '*' + stud + '=' + (stud * i)
+                 newTr.appendChild(newTd);
+                 newTable.appendChild(newTr)
+             }
+         }
+         function showCurs() {
+
+let curs = [247.00, 256.50, 261.50, 259.50, 261.00, 270.00, 284.20, 273.60, 269.00, 271.30];
+let date = ['08.05.2023', '10.05.2023', '11.05.2023', '12.05.2023', '15.05.2023', '16.05.2023', '17.05.2023', '18.05.2023',
+'19.05.2023', '22.05.2023'];
+let cursTable = document.getElementById('TableCurs');
+
+for (let i = 0; i<curs.length; i++) {
+    let tr = document.createElement('tr');
+    let dateTd = document.createElement('td');
+    let cursTd = document.createElement('td');
+    let newTd = document.createElement('td');
+    dateTd.innerHTML = date[i];
+    cursTd.innerHTML = curs[i];
+    newTd.innerHTML = (curs[i] - curs[i-1]).toFixed(2);
+    tr.appendChild(dateTd);
+    tr.appendChild(cursTd);
+    tr.appendChild(newTd);
+    cursTable.appendChild(tr);
+}
+
+let sum = 0;
+for (let i = 0; i<curs.length; i++) {
+    sum = sum + curs[i];
+}
+let average = sum / curs.length;
+document.getElementById('middlenum').innerHTML = 'Среднее значение: ' + average;
+
+let maxCurs = Math.max(...curs);
+let minCurs = Math.min(...curs);
+document.getElementById('max').innerHTML = 'Максимльное значение: ' + maxCurs;
+document.getElementById('min').innerHTML = 'Минимальное значение: ' + minCurs;
+
+}
+
     </script>
 </head>
 <body>
@@ -87,23 +134,35 @@
     </header>
 
     <main>
-        <button onclick="addBlocks()">Создать блоки</button>
-         <div id="blocks"></div>
-         
-         <button onclick="showExchange()">Курс доллара</button>
-         <table-border="1" id="dollar-exchange"></table>
-         <div id="detail"></div>
-
-         <button onclick="addTransparentBlocks()">Создать полупрозрачные блоки</button>
-         <div id="transparent-blocks"></div>
-
-         <input id='inpNum' type='number' value='5' placeholder='введите число кругов'>
-         <button onclick="greenRed()">Красное/зеленое</button>
-         <div id="circles"></div>
+        <div>
+            <button onclick="addBlocks()">Создать блоки</button>
+            <div id="blocks"></div>
+        </div>
+            <button onclick="showExchange()">Курс доллара</button>
+            <table-border="1" id="dollar-exchange"></table>
+            <div id="detail"></div>
+        <div>   
+            <button onclick="addTransparentBlocks()">Создать полупрозрачные блоки</button>
+            <div id="transparent-blocks"></div>
+        </div>
+            <input id='inpNum' type='number' value='5' placeholder='введите число кругов'>
+            <button onclick="greenRed()">Красное/зеленое</button>
+            <div id="circles"></div>
+        <div>
+            <button id="currentTable" onclick="tableUmno()">Таблица умножения</button>
+            <table id="tableOfUmno"></table>
+        </div>
+        <div>
+            <button id="curs" onclick="showCurs()">Курс акций «Абрау Дюрсо»</button>
+            <table style="border: 1; width: 500px;" id="TableCurs"></table>
+            <div id="middlenum"></div>
+            <div id="max"></div>
+            <div id="min"></div>
+        </div>
     </main>
 
     <footer>
-        &copy; Панченко Егор, ФБИ-13, 2 курс, 2023
+        &copy; Смакотин Степан, ФБИ-13, 2 курс, 2023
     </footer>
 </body>
 </html>
