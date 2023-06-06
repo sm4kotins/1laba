@@ -24,3 +24,20 @@ function showDate() {
     out5.innerHTML = 'Дата и время для Индийской локали:' + today5.toLocaleString('gu-IN');
 
 }
+function showDaysCount() {
+    let today = new Date();
+    let inputDate = document.querySelector('input[type=date]');
+    let result = document.getElementById('rusult-count');
+    let birthday = new Date(inputDate.value);
+    let daysCount = (today - birthday)/1000/60/60/24;
+    daysCount = Math.floor(daysCount);
+    result.innerHTML = "Количество дней с даты рождения: " + daysCount;
+}
+
+function ohistka() {
+    let inputDate = document.querySelector('input[type=date]');
+    let result =document.getElementById('rusult-count');
+
+    inputDate.value="";
+    result.innerHTML="";
+}
